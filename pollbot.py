@@ -110,7 +110,7 @@ def startpoll_callback(room, event):
         return
 
     if poll.choices is None or len(poll.choices) < 2:
-        room.send_text("You need to send at lest two choices first!")
+        room.send_text("You need to send at least two choices first!")
         return
 
     # Remove the poll from ONGOING_POLLCREATIONS and add to ONGOING_POLLS
